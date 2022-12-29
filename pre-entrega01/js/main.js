@@ -30,7 +30,7 @@ let productoIngresadoC
 do {producto=prompt('¿Que se les ofrece?');
     productoNoValido=producto!==productoIngresadoA||productoIngresadoB||productoIngresadoC
 
-    if(producto == 1){
+    if(producto = 1){
          productoIngresadoA=prompt('¿Que clase de helado va a querer?');
          if(productoIngresadoA == 10){
             cucuruchoSimple=alert('Que sabores va a querer en su cucurucho simple?');
