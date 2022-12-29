@@ -17,30 +17,27 @@ function Gusto(chocolate,frutilla,granizado) {
         }else if(helado == 3){
               alert('Su helado sera de granizado');
               break;
-        }else{alert('El Sabor ingresado no existe. Ingrese otro numero entre 1 y 3')
+        }else{alert('El Sabor ingresado no existe. Ingrese otro numero entre 1 y 3');
         }
       }while(helado===saborNoValido);
 };
 
-function pago(A){
-      formaDePago=prompt('¿como desea pagar? 1.efectivo 2.tarjeta de credito 3.tarjeta de debito')
+function pago(precioDelProducto){
+      formaDePago=prompt('¿como desea pagar? 1.efectivo 2.tarjeta de credito 3.tarjeta de debito');
       switch(formaDePago){
             case '1':
                   efectivo=1;
-                  totalAPagar=A*efectivo;
-                  alert('el total a pagar es ',totalAPagar,'$.')
+                  alert('el total a pagar es '+precioDelProducto*efectivo+'$.');
                   break;
             case '2':
                   tarjetaDeCredito=1.30;
-                  totalAPagar=A*tarjetaDeCredito;
-                  alert('los pagos con tarjeta de credito tienen un 30% de recargo.')
-                  alert('el total a pagar es ',totalAPagar,'$.');
+                  alert('los pagos con tarjeta de credito tienen un 30% de recargo.');
+                  alert('el total a pagar es '+precioDelProducto*efectivo+'$.');
                   break;
             case '3':
                   tarjetaDeDebito=1.10;
-                  totalAPagar=A*tarjetaDeDebito;
-                  alert('los pagos con tarjeta de debito tienen un 10% de recargo.')
-                  alert('el total a pagar es ',totalAPagar,'$.');
+                  alert('los pagos con tarjeta de debito tienen un 10% de recargo.');
+                  alert('el total a pagar es '+precioDelProducto*efectivo+'$.');
                   break;
             default:
                   alert('forma de pago no valida, ingrese otro metodo.');     
