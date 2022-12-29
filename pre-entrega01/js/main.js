@@ -2,6 +2,9 @@ function bienvenidos(){
 alert('bienvenidos a  la Heladeria Hogar.');
 }
 bienvenidos();
+let chocolate=1001;
+let frutilla=1002;
+let granizado=1003;
 function Gusto(chocolate,frutilla,granizado) {
       do {helado=prompt('Para elegir el sabor de su helado ingrese el numero del menu que corresponda.');
       saborNoValido=helado!==chocolate||frutilla||granizado
@@ -17,12 +20,17 @@ function Gusto(chocolate,frutilla,granizado) {
         }else{alert('El helado ingresado no existe. Ingrese otro numero entre 10 y 12')
         }
       }while(helado===saborNoValido);
-     };
+};
 
+
+let productoIngresadoA
+let productoIngresadoB
+let productoIngresadoC
 
 do {producto=prompt('¿Que se les ofrece?');
-    productoNoValido=producto!==chocolate||frutila||granizado
-    if(producto = 1){
+    productoNoValido=producto!==productoIngresadoA||productoIngresadoB||productoIngresadoC
+
+    if(producto === 1){
          productoIngresadoA=prompt('¿Que clase de helado va a querer?');
          if(productoIngresadoA === 10){
             cucuruchoSimple=prompt('Que sabores va a querer en su cucurucho simple?');
@@ -43,7 +51,7 @@ do {producto=prompt('¿Que se les ofrece?');
       }         
          break;
 
-   }else if(producto = 2){
+   }else if(producto === 2){
          productoIngresadoB=prompt('¿Que clase de pastel va a querer?');
          if(productoIngresadoB === 20){
              alert('el pastel cheesecake sale 2500$')
@@ -51,15 +59,21 @@ do {producto=prompt('¿Que se les ofrece?');
              alert('el pastel selva negra sale 2550$')
          }else if (productoIngresadoB ===22){
              alert('el pastel de frutilla sale 2450$')
-         }else{alert('El helado ingresado no existe. Ingrese otro numero entre 20 y 23')
+         }else{alert('El pastel ingresado no existe. Ingrese otro numero entre 20 y 23')
        }
          break;
 
-   }else if(helado = 3){
-         alert('Su helado sera de granizado');
+   }else if(producto === 3){
+         productoIngresadoC=prompt('¿Que clase de helado de agua va a querer')
+         if(productoIngresadoC === 31){
+            alert('el helado de agua de naranja sale 200$')
+         }else if(productoIngresadoC === 32){
+            alert('el helado de agua de limon sale 200$')
+         }else if(productoIngresadoC === 33){
+            alert('el helado de agua de frutilla sale 200$')
+         }else{alert('El helado de agua ingresado no existe. Ingrese otro numero entre 30 y 33')}
          break;
 
    }else{alert('El producto ingresado no existe. Ingrese otro numero entre 1 y 3')
    }
 }while(helado===saborNoValido);
-
