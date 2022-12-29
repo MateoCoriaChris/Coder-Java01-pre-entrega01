@@ -8,16 +8,16 @@ let granizado=1003;
 function Gusto(chocolate,frutilla,granizado) {
       do {helado=prompt('Para elegir el sabor de su helado ingrese el numero del menu que corresponda.');
       saborNoValido=helado!==chocolate||frutilla||granizado
-      if(helado == 10){
+      if(helado == 15){
              alert('Su helado sera de chocolate');
               break;
-        }else if(helado == 11){
+        }else if(helado == 16){
              alert('Su helado sera de frutilla');
              break;
-        }else if(helado == 12){
+        }else if(helado == 17){
               alert('Su helado sera de granizado');
               break;
-        }else{alert('El helado ingresado no existe. Ingrese otro numero entre 10 y 12')
+        }else{alert('El helado ingresado no existe. Ingrese otro numero entre 15 y 17')
         }
       }while(helado===saborNoValido);
 };
@@ -33,25 +33,25 @@ do {producto=prompt('¿Que se les ofrece?');
     if(producto == 1){
          productoIngresadoA=prompt('¿Que clase de helado va a querer?');
          if(productoIngresadoA == 10){
-            cucuruchoSimple=prompt('Que sabores va a querer en su cucurucho simple?');
+            cucuruchoSimple=alert('Que sabores va a querer en su cucurucho simple?');
             Gusto();
          }else if(productoIngresadoA == 11){
-            cucuruchoDoble=prompt('Que sabores va a querer en su')
+            cucuruchoDoble=alert('¿Que sabores va a querer en su cucurucho doble?')
             Gusto();
          }else if (productoIngresadoA == 12){
-            heladoDeUnCuarto=prompt('Que sabores va a querer en su')
+            heladoDeUnCuarto=alert('¿Que sabores va a querer en su Helado de 1/4?')
             Gusto();
          }else if (productoIngresadoA == 13){
-            heladoDeMedio=prompt('Que sabores va a querer en su')
+            heladoDeMedio=alert('¿Que sabores va a querer en su Helado de 1/2kg?')
             Gusto();
          }else if (productoIngresadoA == 14){
-            heladoDeUnKilo=prompt('Que sabores va a querer en su')
+            heladoDeUnKilo=prompt('¿Que sabores va a querer en su?')
             Gusto();
          }else{alert('El helado ingresado no existe. Ingrese otro numero entre 10 y 14')
       }         
          break;
 
-   }else if(producto = 2=){
+   }else if(producto = 2){
          productoIngresadoB=prompt('¿Que clase de pastel va a querer?');
          if(productoIngresadoB == 20){
              alert('el pastel cheesecake sale 2500$')
@@ -63,8 +63,8 @@ do {producto=prompt('¿Que se les ofrece?');
        }
          break;
 
-   }else if(producto == 3){
-         productoIngresadoC=prompt('¿Que clase de helado de agua va a querer')
+   }else if(producto = 3){
+         productoIngresadoC=prompt('¿Que clase de helado de agua va a querer?')
          if(productoIngresadoC == 31){
             alert('el helado de agua de naranja sale 200$')
          }else if(productoIngresadoC == 32){
