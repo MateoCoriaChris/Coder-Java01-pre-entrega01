@@ -32,12 +32,12 @@ function pago(precioDelProducto){
             case '2':
                   tarjetaDeCredito=1.30;
                   alert('los pagos con tarjeta de credito tienen un 30% de recargo.');
-                  alert('el total a pagar es '+precioDelProducto*efectivo+'$.');
+                  alert('el total a pagar es '+precioDelProducto*tarjetaDeCredito+'$.');
                   break;
             case '3':
                   tarjetaDeDebito=1.10;
                   alert('los pagos con tarjeta de debito tienen un 10% de recargo.');
-                  alert('el total a pagar es '+precioDelProducto*efectivo+'$.');
+                  alert('el total a pagar es '+precioDelProducto*tarjetaDeDebito+'$.');
                   break;
             default:
                   alert('forma de pago no valida, ingrese otro metodo.');     
